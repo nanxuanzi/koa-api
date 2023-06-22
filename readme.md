@@ -17,6 +17,14 @@ touch webpack.config.js
 # babel
 yarn add -D @babel/core @babel/preset-env
 yarn add -D babel-loader
+touch .babelrc
+```
+
+# 搭建项目
+
+```sh
+# koa,
+yarn add koa  
 ```
 
 

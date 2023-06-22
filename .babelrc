@@ -1,0 +1,16 @@
+/*
+    presets：转码规则
+*/
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets":{
+                    "node":"current"
+                }
+            }
+        ]
+    ],
+    "plugins": []
+}
