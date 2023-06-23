@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "yarn webpack --watch"
+    "start": "node dist/app.js",
+    "build": "webpack",
+    "watch":"nodemon"
   },
   "keywords": [],
   "author": "",
@@ -15,10 +16,12 @@
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "babel-loader": "^9.1.2",
+    "nodemon": "^2.0.22",
     "webpack": "^5.88.0",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "koa": "^2.14.2"
+    "koa": "^2.14.2",
+    "koa-router": "^12.0.0"
   }
 }
