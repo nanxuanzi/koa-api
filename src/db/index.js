@@ -1,7 +1,7 @@
 import db from "mongoose";
-
+import {mongodb} from "../config/default";
 // 连接数据库
-db.connect("mongodb+srv://nanxuanzicode:nanxuanzicode@jiqun.wui5uu4.mongodb.net/test?retryWrites=true&w=majority")
+db.connect(mongodb.url)
     .then(()=>{
         console.log('数据库连接成功');        
     })
