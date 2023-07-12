@@ -19,7 +19,6 @@ export const getPost = async ctx => {
                 date
             }
             data.push(apost)
-            console.log(data);
         });
         new ResData().set(ctx, 1, '查询成功', data)
     } else {

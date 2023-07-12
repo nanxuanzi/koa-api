@@ -8,7 +8,7 @@ import { ResData, JwtSign } from "../utils";
  * 用户查询 /u?name=name
  */
 export const getUser = async ctx => {
-    const {name} = ctx.request.query
+    const { name } = ctx.request.query
     const findResult = await UserModel.find({ name})
     if (findResult.length == 0) {
         new ResData().set(ctx, -1, '用户不存在')
